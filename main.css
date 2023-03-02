@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.input-result {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 10px;
+  grid-area: input-result;
+  height: 80px;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+}
+.btn-c {
+  grid-area: btn-c;
+}
+.btn-back {
+  grid-area: btn-back;
+}
+.btn-div {
+  grid-area: btn-div;
+}
+.btn-7 {
+  grid-area: btn-7;
+}
+.btn-8 {
+  grid-area: btn-8;
+}
+.btn-9 {
+  grid-area: btn-9;
+}
+.btn-mult {
+  grid-area: btn-mult;
+}
+.btn-4 {
+  grid-area: btn-4;
+}
+.btn-5 {
+  grid-area: btn-5;
+}
+.btn-6 {
+  grid-area: btn-6;
+}
+.btn-min {
+  grid-area: btn-min;
+}
+.btn-1 {
+  grid-area: btn-1;
+}
+.btn-2 {
+  grid-area: btn-2;
+}
+.btn-3 {
+  grid-area: btn-3;
+}
+.btn-plus {
+  grid-area: btn-plus;
+}
+.btn-0 {
+  grid-area: btn-0;
+}
+.btn-equal {
+  grid-area: btn-equal;
+}
+
+.calculator {
+  width: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "input-result input-result input-result input-result"
+    "btn-c btn-c btn-back btn-div"
+    "btn-7 btn-8 btn-9 btn-mult"
+    "btn-4 btn-5 btn-6 btn-min"
+    "btn-1 btn-2 btn-3 btn-plus"
+    "btn-0 btn-0 btn-0 btn-equal";
+  row-gap: 2px;
+  column-gap: 2px;
+  background-color: black;
+}
+
+.btn {
+  height: 100px;
+  background-color: #d8d9db;
+  font-size: 40px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #ebebeb;
+}
+
+.btn:active {
+  background-color: #bbbcbe;
+}
+
+.btn-last, .btn-equal {
+  background-color: #df974c;
+}
+
+.btn-last:hover, .btn-equal:hover {
+  background-color: #dfb07e;
+}
+
+.btn-last:active, btn-equal:active {
+  background-color: #dd8d37;
+}
