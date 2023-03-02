@@ -40,7 +40,7 @@ const operations = document.querySelectorAll(".btn-last");
 
 for (let operation of operations) {
   operation.addEventListener("click", () => {
-    if (numberInMemory != "") {
+    if (numberInMemory !== "") {
       performOperation();
     }
     numberInMemory = inputResult;
@@ -51,7 +51,7 @@ for (let operation of operations) {
 }
 
 document.querySelector(".btn-equal").addEventListener("click", () => {
-  if (numberInMemory != "") {
+  if (numberInMemory !== "") {
     performOperation();
   }
   numberInMemory = "";
@@ -60,7 +60,7 @@ document.querySelector(".btn-equal").addEventListener("click", () => {
 });
 
 const performOperation = () => {
-  if (numberInMemory != "") {
+  if (numberInMemory !== "") {
     switch (operationSymbol) {
       case "÷":
         inputResult = Number(numberInMemory) / Number(inputResult);
